@@ -2,32 +2,33 @@ import React from "react";
 import "./Orators.css";
 
 const Orators = () => {
-  const orators = [
-    {
-      name: "Prof. Mohamed Hosni",
-      title: "CEO & Prof.",
-      country: "United Kingdom",
-      img: "../../Images/Mohamed.911e34c26a8168d7d2e6 (1).jpg",
-    },
-    {
-      name: "Prof. Chrysoula I. Liakou",
-      title: "CEO & Prof.",
-      country: "Greece",
-      img: "../../Images/chrysoula.872cd623771a8263d69d.png",
-    },
-    {
-      name: "Prof. Joaquin Cayon",
-      title: "CEO & Prof.",
-      country: "Spain",
-      img: "../../Images/Joaquin.9230a5565d4d0c709f83.jpg",
-    },
-    {
-      name: "Prof. Mohammed Abu-Ragheef",
-      title: "CEO & Prof.",
-      country: "Sweden",
-      img: "../../Images/Mohammed.913e01f3ba94e2457a47.jpg",
-    },
-  ];
+ const orators = [
+  {
+    name: "Prof. Mohamed Hosni",
+    title: "CEO & Prof.",
+    country: "United Kingdom",
+    img: "/Images/Mohamed.jpg",
+  },
+  {
+    name: "Prof. Chrysoula I. Liakou",
+    title: "CEO & Prof.",
+    country: "Greece",
+    img: "/Images/chrysoula.png",
+  },
+  {
+    name: "Prof. Joaquin Cayon",
+    title: "CEO & Prof.",
+    country: "Spain",
+    img: "/Images/Joaquin.jpg",
+  },
+  {
+    name: "Prof. Mohammed Abu-Ragheef",
+    title: "CEO & Prof.",
+    country: "Sweden",
+    img: "/Images/Mohammed.jpg",
+  },
+];
+
 
   return (
     <div className="orators-section">

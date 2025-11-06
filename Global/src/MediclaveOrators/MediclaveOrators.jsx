@@ -12,25 +12,25 @@ const MediclaveOrators = () => {
 
   const orators = [
     {
-      img: "../../Images/Mohamed.911e34c26a8168d7d2e6.jpg",
+      img: "/Images/Mohamed.911e34c26a8168d7d2e6.jpg",
       name: "Prof. Mohamed Hosni",
       title: "CEO & Prof.",
       country: "United Kingdom",
     },
     {
-      img: "../../Images/chrysoula.872cd623771a8263d69d.png",
+      img: "/Images/chrysoula.872cd623771a8263d69d.png",
       name: "Prof. Chrysoula I. Liakou",
       title: "CEO & Prof.",
       country: "Greece",
     },
     {
-      img: "../../Images/Joaquin.9230a5565d4d0c709f83.jpg",
+      img: "/Images/Joaquin.9230a5565d4d0c709f83.jpg",
       name: "Prof. Joaquin Cayon",
       title: "CEO & Prof.",
       country: "Spain",
     },
     {
-      img: "../../Images/Mohammed.913e01f3ba94e2457a47.jpg",
+      img: "/Images/Mohammed.913e01f3ba94e2457a47.jpg",
       name: "Prof. Mohammed Abu-Ragheef",
       title: "CEO & Prof.",
       country: "Sweden",

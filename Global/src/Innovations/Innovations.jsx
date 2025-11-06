@@ -14,7 +14,7 @@ const Innovations = () => {
     <div className="innovations-container">
       <div className="innovations-image">
         <img
-          src="../../Images/about_img.f4bf0a90c4e6470260a6.jpg"
+          src="/Images/About_page.4367b8764303a4b76871 (1).png"
           alt="Innovations in Global Health"
         />
       </div>

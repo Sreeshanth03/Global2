@@ -3,17 +3,20 @@ import { Button } from "react-bootstrap";
 import { FaRegArrowAltCircleRight } from "react-icons/fa";
 import "./Events1.css";
 import { useNavigate } from "react-router-dom";
+
 const Events1 = () => {
-    const navigate=useNavigate()
-    const HandleViewAll=()=>{
-navigate("/venue")
-    }
+  const navigate = useNavigate();
+
+  const HandleViewAll = () => {
+    navigate("/venue");
+  };
+
   const images = [
-    "../../Images/Img1.avif",
-    "../../Images/cac-vlc.jpg",
-    "../../Images/img3.jpeg",
-    "../../Images/img5.avif",
-    "../../Images/img6.jpg",
+    "/Images/Img1.avif",
+    "/Images/cac-vlc.jpg",
+    "/Images/img3.jpeg",
+    "/Images/img5.avif",
+    "/Images/img6.jpg",
   ];
 
   const places = [
@@ -29,10 +32,12 @@ navigate("/venue")
   return (
     <div className="venue-container">
       <h1 className="venue-heading">Mediclave – Venue</h1>
+
       <div className="venue-content">
         <div className="venue-left">
           <p className="venue-subtitle">Proposed Conference Venue</p>
           <h5 className="venue-hotel">Novotel Valencia Lavant</h5>
+
           <ul className="venue-list">
             {places.map((place, index) => (
               <li key={index}>
@@ -51,7 +56,10 @@ navigate("/venue")
           ))}
         </div>
       </div>
-      <Button className="venue-btn" onClick={HandleViewAll}>View All</Button>
+
+      <Button className="venue-btn" onClick={HandleViewAll}>
+        View All
+      </Button>
     </div>
   );
 };

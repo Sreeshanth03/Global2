@@ -6,7 +6,12 @@ const About = () => {
   return (
     <div>
       {/* Background Image Section */}
-      <div className="background-header">
+      <div
+        className="background-header"
+        style={{
+          backgroundImage: `url("/Images/about_img.f4bf0a90c4e6470260a6.jpg")`,
+        }}
+      >
         <div className="background-overlay">
           <h1 className="background-title">About Event</h1>
         </div>
@@ -25,13 +30,7 @@ const About = () => {
             <p className="intro-text">
               Join us at the prestigious Global Medical Conclave – Mediclave 2025,
               where healthcare professionals, researchers, scientists, and
-              policymakers unite to discuss groundbreaking developments, tackle
-              pressing challenges, and shape the future of medical science. 
-              Mediclave is more than just a conference – it's a dynamic platform 
-              for innovation, research, and collaboration in healthcare, medical 
-              technology, and patient care. With a focus on artificial intelligence, 
-              personalized medicine, and global health challenges, this conclave 
-              aims to foster partnerships and deliver impactful solutions.
+              policymakers unite to discuss groundbreaking developments...
             </p>
           </Card.Body>
         </Card>
@@ -71,70 +70,25 @@ const About = () => {
         <div className="section mb-5">
           <h2 className="section-title">Event Highlights</h2>
           <Row>
-            <Col md={6} lg={4} className="mb-3">
-              <Card className="highlight-card h-100">
-                <Card.Body>
-                  <h5 className="highlight-title">Keynote Speakers</h5>
-                  <p className="highlight-desc">Leading experts in medicine, policy, and tech.</p>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6} lg={4} className="mb-3">
-              <Card className="highlight-card h-100">
-                <Card.Body>
-                  <h5 className="highlight-title">Exhibition</h5>
-                  <p className="highlight-desc">Showcase of cutting-edge healthcare tech.</p>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6} lg={4} className="mb-3">
-              <Card className="highlight-card h-100">
-                <Card.Body>
-                  <h5 className="highlight-title">Accredited Learning</h5>
-                  <p className="highlight-desc">Earn CPD/CME credits by attending the conferences.</p>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6} lg={4} className="mb-3">
-              <Card className="highlight-card h-100">
-                <Card.Body>
-                  <h5 className="highlight-title">Publication Opportunities</h5>
-                  <p className="highlight-desc">Proceedings or journal partnerships for presented work.</p>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6} lg={4} className="mb-3">
-              <Card className="highlight-card h-100">
-                <Card.Body>
-                  <h5 className="highlight-title">Workshops & Seminars</h5>
-                  <p className="highlight-desc">Interactive sessions on current topics.</p>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6} lg={4} className="mb-3">
-              <Card className="highlight-card h-100">
-                <Card.Body>
-                  <h5 className="highlight-title">Networking Opportunities</h5>
-                  <p className="highlight-desc">Connect with global leaders.</p>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6} lg={4} className="mb-3">
-              <Card className="highlight-card h-100">
-                <Card.Body>
-                  <h5 className="highlight-title">Collaboration Building</h5>
-                  <p className="highlight-desc">Initiate joint research projects or multi-institutional studies.</p>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={6} lg={4} className="mb-3">
-              <Card className="highlight-card h-100">
-                <Card.Body>
-                  <h5 className="highlight-title">Awards & Recognition</h5>
-                  <p className="highlight-desc">Compete for best paper/poster prizes and other accolades.</p>
-                </Card.Body>
-              </Card>
-            </Col>
+            {[
+              ["Keynote Speakers", "Leading experts in medicine, policy, and tech."],
+              ["Exhibition", "Showcase of cutting-edge healthcare tech."],
+              ["Accredited Learning", "Earn CPD/CME credits by attending the conferences."],
+              ["Publication Opportunities", "Proceedings or journal partnerships for presented work."],
+              ["Workshops & Seminars", "Interactive sessions on current topics."],
+              ["Networking Opportunities", "Connect with global leaders."],
+              ["Collaboration Building", "Initiate joint research projects or multi-institutional studies."],
+              ["Awards & Recognition", "Compete for best paper/poster prizes and other accolades."],
+            ].map(([title, desc], i) => (
+              <Col md={6} lg={4} className="mb-3" key={i}>
+                <Card className="highlight-card h-100">
+                  <Card.Body>
+                    <h5 className="highlight-title">{title}</h5>
+                    <p className="highlight-desc">{desc}</p>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
           </Row>
         </div>
 
@@ -142,33 +96,21 @@ const About = () => {
         <div className="section mb-5">
           <h2 className="section-title">Important Dates</h2>
           <Row>
-            <Col md={4} className="mb-3">
-              <Card className="date-card text-center h-100">
-                <Card.Body>
-                  <h5 className="date-title">Event Date</h5>
-                  <div className="date-divider"></div>
-                  <p className="date-info">25th November</p>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-3">
-              <Card className="date-card text-center h-100">
-                <Card.Body>
-                  <h5 className="date-title">Proposed Venue</h5>
-                  <div className="date-divider"></div>
-                  <p className="date-info">Novotel Valencia, Spain</p>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-3">
-              <Card className="date-card text-center h-100">
-                <Card.Body>
-                  <h5 className="date-title">Registration Deadline</h5>
-                  <div className="date-divider"></div>
-                  <p className="date-info">20th November</p>
-                </Card.Body>
-              </Card>
-            </Col>
+            {[
+              ["Event Date", "25th November"],
+              ["Proposed Venue", "Novotel Valencia, Spain"],
+              ["Registration Deadline", "20th November"],
+            ].map(([title, info], i) => (
+              <Col md={4} className="mb-3" key={i}>
+                <Card className="date-card text-center h-100">
+                  <Card.Body>
+                    <h5 className="date-title">{title}</h5>
+                    <div className="date-divider"></div>
+                    <p className="date-info">{info}</p>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
           </Row>
         </div>
       </div>

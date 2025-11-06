@@ -17,7 +17,8 @@ const Venue = () => {
 
       {/* ---- Venue Image ---- */}
       <div className="venue-image">
-        <img src="../../Images/restaurante-home-rooftop.jpg" alt="Venue" />
+        {/* ✅ Correct way to access image from public folder */}
+        <img src="/Images/restaurante-home-rooftop.jpg" alt="Venue" />
       </div>
 
       {/* ---- Nearby Places ---- */}
@@ -26,31 +27,31 @@ const Venue = () => {
 
         <div className="places-grid">
           <div className="place-card">
-            <img src="../../Images/see.jpeg" alt="Serranos Towers" />
+            <img src="/Images/see.jpeg" alt="Serranos Towers" />
             <h4>Serranos Towers</h4>
             <p>2.4 km away</p>
           </div>
 
           <div className="place-card">
-            <img src="../../Images/val.jpeg" alt="Valencia Cathedral" />
+            <img src="/Images/val.jpeg" alt="Valencia Cathedral" />
             <h4>Valencia Cathedral</h4>
             <p>3.6 km away</p>
           </div>
 
           <div className="place-card">
-            <img src="../../Images/gu.jpeg" alt="Gulliver Park" />
+            <img src="/Images/gu.jpeg" alt="Gulliver Park" />
             <h4>Gulliver Park</h4>
             <p>4.7 km away</p>
           </div>
 
           <div className="place-card">
-            <img src="../../Images/ocean.webp" alt="Oceanogràfic València" />
+            <img src="/Images/ocean.webp" alt="Oceanogràfic València" />
             <h4>Oceanogràfic València</h4>
             <p>6.0 km away</p>
           </div>
 
           <div className="place-card">
-            <img src="../../Images/city.webp" alt="City of Arts and Sciences" />
+            <img src="/Images/city.webp" alt="City of Arts and Sciences" />
             <h4>City of Arts and Sciences</h4>
             <p>6.5 km away</p>
           </div>

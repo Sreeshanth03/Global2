@@ -15,19 +15,22 @@ import {
   FaChevronRight,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+
 const Quick = () => {
-  const navigate=useNavigate()
-  const HandleClick=()=>{
-    navigate("/about")
-  }
+  const navigate = useNavigate();
+
+  const HandleClick = () => {
+    navigate("/about");
+  };
+
   return (
     <footer className="footer-container">
       {/* Left Logo Section */}
       <div className="footer-section logo-section">
-        <img src="../../Images/Image.png" alt="Mediclave 2025" className="footer-logo" />
+        {/* ✅ Fixed image path for deployment */}
+        <img src="/Images/Image.png" alt="Mediclave 2025" className="footer-logo" />
         <p className="footer-tagline">
-          Innovations in Global Health: Bridging Gaps through Technology &
-          Collaboration
+          Innovations in Global Health: Bridging Gaps through Technology & Collaboration
         </p>
       </div>
 
@@ -35,7 +38,7 @@ const Quick = () => {
       <div className="footer-section">
         <h3 className="footer-title">Quick Links</h3>
         <ul className="footer-links">
-          <li onClick={HandleClick}><FaChevronRight />About</li>
+          <li onClick={HandleClick}><FaChevronRight /> About</li>
           <li><FaChevronRight /> Executive Panel</li>
           <li><FaChevronRight /> Tracks</li>
           <li><FaChevronRight /> Orators</li>
@@ -50,12 +53,12 @@ const Quick = () => {
       <div className="footer-section">
         <h3 className="footer-title">Social Media</h3>
         <ul className="footer-social">
-          <li><a href="https://facebook.com" target="_blank"><FaFacebook /> Facebook</a></li>
-          <li><a href="https://twitter.com" target="_blank"><FaTwitter /> Twitter (X)</a></li>
-          <li><a href="https://instagram.com" target="_blank"><FaInstagram /> Instagram</a></li>
-          <li><a href="https://youtube.com" target="_blank"><FaYoutube /> YouTube</a></li>
-          <li><a href="https://linkedin.com" target="_blank"><FaLinkedin /> LinkedIn</a></li>
-          <li><a href="https://reddit.com" target="_blank"><FaReddit /> Reddit</a></li>
+          <li><a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebook /> Facebook</a></li>
+          <li><a href="https://twitter.com" target="_blank" rel="noreferrer"><FaTwitter /> Twitter (X)</a></li>
+          <li><a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram /> Instagram</a></li>
+          <li><a href="https://youtube.com" target="_blank" rel="noreferrer"><FaYoutube /> YouTube</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedin /> LinkedIn</a></li>
+          <li><a href="https://reddit.com" target="_blank" rel="noreferrer"><FaReddit /> Reddit</a></li>
         </ul>
       </div>
 

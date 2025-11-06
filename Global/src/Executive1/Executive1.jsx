@@ -1,27 +1,28 @@
 import React from "react";
 import "./Executive1.css";
 import { useNavigate } from "react-router-dom";
+
 const executives = [
   {
-    img: "../../Images/Hassan-El-Tamimi.e5a28071ccb252b74746.webp",
+    img: "/Images/Hassan-El-Tamimi.e5a28071ccb252b74746 (1).webp",
     name: "Hassan El-Tamimi",
     role: "Founder & Prof.",
     country: "UAE",
   },
   {
-    img: "../../Images/Mohamed.911e34c26a8168d7d2e6.jpg",
+    img: "/Images/Mohamed.911e34c26a8168d7d2e6.jpg",
     name: "Mohamed Hosni",
     role: "CEO & Prof.",
     country: "UK",
   },
   {
-    img: "../../Images/chrysoula.872cd623771a8263d69d.png",
+    img: "/Images/chrysoula.872cd623771a8263d69d.png",
     name: "Chrysoula I. Liakou",
     role: "Founder & Prof.",
     country: "Greece",
   },
   {
-    img: "../../Images/dana.3d0dc6ab96c3aa2f3391.jpg",
+    img: "/Images/dana.3d0dc6ab96c3aa2f3391.jpg",
     name: "Dana York",
     role: "Founder & Prof.",
     country: "United States",
@@ -29,10 +30,12 @@ const executives = [
 ];
 
 const Executive1 = () => {
-  const navigate=useNavigate()
-  const HandleView=()=>{
-navigate("/exceutive")
-  }
+  const navigate = useNavigate();
+
+  const HandleView = () => {
+    navigate("/exceutive");
+  };
+
   return (
     <div className="executive-container">
       <h2 className="executive-title">Meet Our Esteemed Executive Panel</h2>
@@ -55,7 +58,9 @@ navigate("/exceutive")
         ))}
       </div>
 
-      <button className="view-all-btn" onClick={HandleView}>View All</button>
+      <button className="view-all-btn" onClick={HandleView}>
+        View All
+      </button>
     </div>
   );
 };

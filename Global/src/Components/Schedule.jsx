@@ -1,6 +1,13 @@
 import React from "react";
 import "./Schedule.css";
-import { FaClock, FaMapMarkerAlt, FaUtensils, FaIdCard, FaChalkboardTeacher, FaCoffee } from "react-icons/fa";
+import {
+  FaClock,
+  FaMapMarkerAlt,
+  FaUtensils,
+  FaIdCard,
+  FaChalkboardTeacher,
+  FaCoffee,
+} from "react-icons/fa";
 
 const Schedule = () => {
   const scheduleData = [
@@ -44,7 +51,9 @@ const Schedule = () => {
       <div
         className="medischedule-hero"
         style={{
-          backgroundImage: `url("../../Images/schedule.84fde9d2bdeaf673bf74.png")`,
+          backgroundImage: `url(${process.env.PUBLIC_URL + "/Images/schedule.png"})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
         }}
       >
         <h1>Mediclave 2025</h1>

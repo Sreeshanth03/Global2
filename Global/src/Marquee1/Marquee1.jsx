@@ -3,10 +3,10 @@ import "./Marquee.css";
 
 const Marquee1 = () => {
   const images = [
-    "../../Images/Marquee1.jpg",
-    "../../Images/Marq2.jpg",
-    "../../Images/Marq3.jpg",
-    "../../Images/marq5.jpg",
+    "/Images/Marquee1.jpg",
+    "/Images/Marq2.jpg",
+    "/Images/Marq3.jpg",
+    "/Images/marq5.jpg",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
